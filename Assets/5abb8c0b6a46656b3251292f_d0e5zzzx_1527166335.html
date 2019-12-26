@@ -1,0 +1,265 @@
+<body class="ng-scope block-ui block-ui-anim-fade frontend-properties-list">
+
+<div class="ng-scope">
+  <div class="titleSearch ng-scope">
+	<h1>
+		<span class="ng-binding">Search Homes</span>
+	</h1>
+	<div class="searchBlock">
+		<div class="input-group">
+			<input class="form-control" id="Search" placeholder="Enter an address, neighborhood, city or zip code" type="text">
+				<span class="input-group-addon search-btn ng-scope">Search</span>
+			</div>
+		</div>
+		<div class="PropertiesListCtrl.advSearch" *ngIf="advanSearchHide">
+			<button type="button" class="btn btn-link pull-right mb30 ng-scope" (click)="advancedsearch()">Advanced Search</button>
+		</div>
+    <div _ngcontent-c3="" class="clearfix" style="margin:  0;padding:  0;"></div>
+		<div class="container-fluid"
+     class="card card-block card-header">
+			<div class="row">
+				<form class="advanced-search-form" *ngIf="advanSearch">
+					<div class="row">
+						<div class="col-sm-8 col-md-4 col-lg-2">
+							<label for="city" class="control-label w100 ng-scope">City</label>
+							<input class="form-control" id="city" type="text">
+							</div>
+							<div class="col-xs-6 col-sm-4 col-lg-1">
+								<label for="zip" class="control-label w100">Zip</label>
+								<input class="form-control" id="zip" type="text">
+								</div>
+								<div class="col-xs-6 col-sm-4 col-lg-1">
+									<label for="type" class="control-label w100 ng-scope">Type</label>
+									<input class="form-control" id="type" placeholder="Any" type="text">
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
+										<label for="beds" class="control-label w100 ng-scope">Beds</label>
+										<input class="form-control" id="beds" placeholder="Any" type="number" min="0" step="q">
+										</div>
+										<div class="col-xs-6 col-sm-4 col-md-2 col-lg-1">
+											<label for="baths" class="control-label w100 ng-scope">Baths</label>
+											<input class="form-control" id="baths" placeholder="Any" type="number" min="0" step="q">
+											</div>
+											<div class="col-sm-4 col-lg-2 areaBlock">
+												<label for="area" class="control-label w100 ng-scope">Min. Area</label>
+												<div class="input-group">
+													<input class="form-control" id="area" placeholder="none" type="number" min="0" step="q">
+														<div class="input-group-addon">ft
+															<sup>2</sup>
+														</div>
+													</div>
+												</div>
+												<div class="col-sm-4 col-lg-2 priceBlock">
+													<label for="price" class="control-label w100 ng-scope">Min. Price</label>
+													<div class="input-group">
+														<div class="input-group-addon">$</div>
+														<input class="form-control" id="price" placeholder="none" type="number" min="0" step="q">
+														</div>
+													</div>
+													<div class="col-xs-6 col-sm-3 col-lg-1 text-center">
+														<label class="control-label w100">&nbsp;</label>
+														<input type="submit" class="btn btn-primary btn-search search" value="Search">
+														</div>
+														<div class="col-xs-6 col-sm-1 col-lg-1 text-center">
+															<label class="control-label w100">&nbsp;</label>
+															<button type="button" class="btn btn-primary ml30 btn-search cancel" (click)="advancedfield()">
+																<span class="glyphicon glyphicon-remove"></span>
+															</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+
+										<div class="listOptions ng-scope">
+											<ul>
+
+												<li class="ng-scope">
+													<div class="iconBlock">
+														<img alt="VIDEO WALKTHROUGH" src="/assets/images/video_search.png">
+														</div>
+														<p>
+															<span class="ng-binding">VIDEO WALKTHROUGH</span>
+														</p>
+													</li>
+
+													<li class="ng-scope">
+														<div class="iconBlock">
+															<img alt="HDR PHOTOGRAPHY" src="/assets/images/picture.png">
+															</div>
+															<p>
+																<span class="ng-binding">HDR PHOTOGRAPHY</span>
+															</p>
+														</li>
+
+														<li class="ng-scope">
+															<div class="iconBlock">
+																<img alt="AERIAL VIDEOS" src="/assets/images/drone.png">
+																</div>
+																<p>
+																	<span class="ng-binding">AERIAL VIDEOS</span>
+																</p>
+															</li>
+
+															<li class="ng-scope">
+																<div class="iconBlock">
+																	<img alt="3D VIRTUAL TOURS" src="/assets/images/3d-search.png">
+																	</div>
+																	<p>
+																		<span class="ng-binding">3D VIRTUAL TOURS</span>
+																	</p>
+																</li>
+											</ul>
+							</div>
+			</div>
+
+      <div class="categoryBlock ng-scope" id="VIDEO WALKTHROUGH">
+          <h3 class="">VIDEO WALKTHROUGH</h3>
+          <p class="">Watch streaming HD video footage of homes for sale in your neighborhood.  Our cameras "float" through the home using the best steadicam technology.d</p>
+      <div class="jcarousel-wrapper">
+        <div class="videoWalkthrough">
+          <ngx-carousel [inputs]="carouselConfig">
+            <ngx-item NgxCarouselItem>
+            <ul style="left: 0px; top: 0px;">
+              <li class="" style="width: 33.33%;">
+              	<div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/18383/pictures/online/preview/DSC07661-1697698.jpg');">
+              		<span class="dir">10214 Michala Pl, Santee, CA 92071, USA</span>
+              	</div>
+              </li>
+
+            </ul>
+          </ngx-item>
+
+          <ngx-item NgxCarouselItem>
+          <ul style="left: 0px; top: 0px;">
+
+            <li class="" style="width: 33.33%;">
+              <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/23022/pictures/online/preview/DSC00312-2242159.jpg');">
+                <span class="dir">6913 Governors Grant Ln, Fredericksburg, VA 22407, USA</span>
+              </div>
+            </li>
+
+          </ul>
+        </ngx-item>
+
+        <ngx-item NgxCarouselItem>
+        <ul style="left: 0px; top: 0px;">
+          <li class="" style="width: 33.33%;">
+            <div class="imgBlock" style="background-image: url('https://s3-eu-west-1.amazonaws.com/live.homejab/PROPERTY/7092/pictures/online/preview/IMG_2082-386244.jpg');">
+              <span class="dir">10 Jamestown Pass, Colts Neck, NJ 07722, USA</span>
+            </div>
+          </li>
+        </ul>
+      </ngx-item>
+
+          <ngx-item NgxCarouselItem>
+          <ul style="left: 0px; top: 0px;">
+            <li class="" style="width: 33.33%;">
+              <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/18629/pictures/online/preview/1U8A0004-1756213.jpg');">
+                <span class="dir">2174 Half Moon Pl NE #B, Washington, DC 20018</span>
+              </div>
+            </li>
+
+          </ul>
+        </ngx-item>
+
+        <ngx-item NgxCarouselItem>
+        <ul style="left: 0px; top: 0px;">
+
+          <li class="" style="width: 33.33%;">
+            <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/14764/pictures/online/preview/1_2-1328404.jpg');">
+              <span class="dir">415 Peltoma Rd, Haddonfield, NJ 08033, USA</span>
+            </div>
+          </li>
+
+        </ul>
+      </ngx-item>
+
+      <ngx-item NgxCarouselItem>
+      <ul style="left: 0px; top: 0px;">
+
+        <li class="" style="width: 33.33%;">
+          <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/17171/pictures/online/preview/_MG_1831-1557309.jpg');">
+            <span class="dir">458 Caswallen Dr, West Chester, PA 19380, USA</span>
+          </div>
+        </li>
+      </ul>
+    </ngx-item>
+
+          <ngx-item NgxCarouselItem>
+          <ul style="left: 0px; top: 0px;">
+            <li class="" style="width: 33.33%;">
+              <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/18020/pictures/online/preview/IMG_4310-1666547.jpg');">
+                <span class="dir">644 Massachusetts Avenue NE #501, Washington, DC, United States</span>
+              </div>
+            </li>
+          </ul>
+        </ngx-item>
+
+        <ngx-item NgxCarouselItem>
+        <ul style="left: 0px; top: 0px;">
+
+          <li class="" style="width: 33.33%;">
+            <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/19910/pictures/online/preview/DSC03573-1875385.jpg');">
+              <span class="dir">4509 Burlington Rd, Hyattsville, MD 20781, USA</span>
+            </div>
+          </li>
+
+        </ul>
+      </ngx-item>
+
+      <ngx-item NgxCarouselItem>
+      <ul style="left: 0px; top: 0px;">
+        <li class="" style="width: 33.33%;">
+          <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/15648/pictures/online/preview/_MG_1257-1391459.jpg');">
+            <span class="dir">521 Broxburn Ave, Tampa, FL 33617, USA</span>
+          </div>
+        </li>
+      </ul>
+    </ngx-item>
+
+        <ngx-item NgxCarouselItem>
+        <ul style="left: 0px; top: 0px;">
+          <li class="" style="width: 33.33%;">
+            <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/22866/pictures/online/preview/_MG_7473-2220673.jpg');">
+              <span class="dir">7228 Tanaqua Ln, Austin, TX 78739, USA</span>
+            </div>
+          </li>
+        </ul>
+      </ngx-item>
+
+      <ngx-item NgxCarouselItem>
+      <ul style="left: 0px; top: 0px;">
+        <li class="" style="width: 33.33%;">
+          <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/18516/pictures/online/preview/IMG_8517-1712340.jpg');">
+            <span class="dir">13915 Magnolia Glen Cir, Orlando, FL 32828, USA</span>
+          </div>
+        </li>
+      </ul>
+    </ngx-item>
+
+    <ngx-item NgxCarouselItem>
+    <ul style="left: 0px; top: 0px;">
+      <li class="" style="width: 33.33%;">
+        <div class="imgBlock" style="background-image: url('https://media.homejab.com/PROPERTY/18516/pictures/online/preview/IMG_8517-1712340.jpg');">
+          <span class="dir">13915 Magnolia Glen Cir, Orlando, FL 32828, USA</span>
+        </div>
+      </li>
+
+    </ul>
+  </ngx-item>
+
+          <button NgxCarouselPrev class="leftRs">&lt;</button>
+          <button NgxCarouselNext class="rightRs">&gt;</button>
+        </ngx-carousel>
+      </div>
+    </div>
+
+          <div class="button">
+            <a class="ng-scope" href="#">See more listings</a>
+          </div>
+      </div>
+
+    </div>
+</body>
